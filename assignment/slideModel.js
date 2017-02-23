@@ -23,5 +23,5 @@ var slide4 = {
 };
 var slide5 = {
   slideNumber: 5,
-  title: " "
+  title: "Ending Slide"
 };
