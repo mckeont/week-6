@@ -38,15 +38,22 @@ var state = {
   ]
 };
 
-var clickNextButton = function() {
+var clickNextButton = function(state) {
+  if (state.slideNumber >=1 && state.slideNumber < 5) {
+    state.slideNumber = state.slideNumber + 1;
+  }
+console.log("Slide Number:", state.slideNumber);
+};
+var clickPreviousButton = function(state) {
+ if(state.slideNumber > 1) {
+   state.slideNumber = state.slideNumber -1;
+ }
+ console.log("Slide Number:", state.slideNumber);
+};
 
-}
-
-var clickPreviousButton = function() {
-
-}
-
-var saySlideName = function(slide) {
+var saySlideName = function(state) {
+  var slideName = state.slideNumber;
+  console.log("Slide Number:", slideName);
   // saySlideName uses console.log to "say" the name of the slide it is given. It should run when
   // someone clicks on one of the buttons.
-}
+};

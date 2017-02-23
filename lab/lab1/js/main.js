@@ -17,7 +17,9 @@ downloadData.done(function(data) {
   /* ================================
   Start your code here
   ================================ */
-
+_.each(parsedData, function(item){
+  var myHtml = '<div class="item"><h3>'+item.Name+'</h3><p>'+item.Notes+'</p?</div>';
+});
   /* ================================
   End your code here
   ================================ */
